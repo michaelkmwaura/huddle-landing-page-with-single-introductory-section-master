@@ -1,0 +1,148 @@
+body{
+  background-color: hsl(257, 40%, 49%);
+  background-image: url("./assets/images/bg-desktop.svg");
+  color: white;
+  font-family: sans-serif;
+  height: 100vh;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#header img{
+  height: 30px;
+  margin: 30px 0 30px 30px ;
+}
+
+
+#maindiv{
+  width: auto;
+  margin-top: 10px;
+  padding: 0 30px 0 30px;
+  text-align: start;
+  gap: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+#maintext{
+  padding: 50px 0 0 0;
+}
+
+#maintext h1{
+  line-height: 50px;
+  margin-bottom: 10px;
+}
+
+#maintext p{
+  line-height: 25px;
+  margin-bottom: 10px
+}
+
+
+#mainimg{
+  max-width: 100%;
+  width: 100vw;
+}
+
+
+#button{
+  width: 200px; 
+  background-color: white;
+  color: hsl(257, 40%, 49%);
+  padding: 15px;
+  border-radius: 50px; 
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
+  box-shadow: 1px 3px 5px 1px black;
+}
+
+#button:active{
+  background-color: hsl(300, 69%, 71%);
+  color: white
+}
+
+#button:hover{
+  background-color: hsl(300, 69%, 71%);
+  color: white
+}
+
+#button:focus{
+  background-color: hsl(300, 69%, 71%);
+  box-shadow: 1px 3px 5px 1px black;
+}
+
+.icons{
+  height: 25px;
+  width: 25px;
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 10px;
+  transition: 0.3s;
+}
+
+.icons:hover{
+  border: 1px solid hsl(300, 69%, 71%);
+}
+
+.icons img{
+  height: 60%;
+}
+
+#icons{
+  display:flex;
+  justify-content: end;
+  align-items: end;
+}
+
+@media screen and (max-width: 700px) {
+  
+  body{
+    background-image: url('./assets/images/bg-mobile.svg');
+    display: flex;
+    justify-content: center;
+  }
+
+  #maindiv{
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 0 30px 0 30px ;
+    margin: 0;
+    font-size: smaller;
+    line-height: 0;
+   }
+
+  #icons{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 20px 0;
+  }
+
+  #maintext{
+    padding: 0;
+    line-height: 0;
+  }
+
+  #maintext h1{
+    line-height: 40px;
+  }
+  
+  #maintext p{
+    line-height: 20px;
+  }
+
+}
